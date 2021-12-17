@@ -12,11 +12,11 @@ const cron = require("node-cron");
 
 
 // Allowed values
-// *	any value checked
-// ,	value list separator checked
-// -	range of values checked
-// /	step values checked
-// At a particular time checked
+// *	any value
+// ,	value list separator
+// -	range of values
+// /	step values
+// At a particular time
 
 
 cron.schedule("* * * * *",()=>{
@@ -24,19 +24,14 @@ cron.schedule("* * * * *",()=>{
 })
 
 
-
 cron.schedule("2,10 * * * *",()=>{
     console.log("It's the chole kulche time at 2nd and 10th minute");
 })
 
 
-
-
 cron.schedule("2-10 * * * *",()=>{
     console.log("It's a coca cola time at every minute from 2nd to 10th minute");
 })
-
-
 
 
 cron.schedule("*/3 * * * *",()=>{
@@ -54,8 +49,6 @@ cron.schedule("00 20 * * *",()=>{
 cron.schedule("* 8 * * 1-5",()=>{
   console.log("job is runnnig every weekday at 8 a.m.")  
 })
-
-
 
 
 
